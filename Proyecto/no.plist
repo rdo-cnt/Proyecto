@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Titulo</key>
+		<string>Fundación de Tenochtitlán </string>
+		<key>Descripcion</key>
+		<string>Los aztecas fundan la ciudad Tenochtitlán (hoy Ciudad de México).</string>
+		<key>Foto</key>
+		<string>http://noticias.universia.net.mx/mx/images/investigacion/f/fu/fun/fundacion-de-tenochtitlan.jpg</string>
+		<key>Año</key>
+		<real>1325</real>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Dominación de los españoles</string>
+		<key>Descripcion</key>
+		<string>Los conquistadores españoles (Hernán Cortés) someten a los aztecas e inician 300 años de dominación colonial. Se lleva a cabo la cristianización e hispanización de los indígenas.
+Los conquistadores españoles (Hernán Cortés) someten a los aztecas e inician 300 años de dominación colonial. Se lleva a cabo la cristianización e hispanización de los indígenas.
+Los conquistadores españoles (Hernán Cortés) someten a los aztecas e inician 300 años de dominación colonial. Se lleva a cabo la cristianización e hispanización de los indígenas.
+</string>
+		<key>Foto</key>
+		<string>http://www.noticiasnet.mx/portal/sites/default/files/fotos/2012/01/07/caciques-2.jpg</string>
+		<key>Año</key>
+		<integer>1520</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Declaración de independencia</string>
+		<key>Descripcion</key>
+		<string>México declara su independencia pero, al contrario de lo que sucedió en los Estados Unidos, ésta no se vio acompañada por un proceso de democratización. El movimiento revolucionario que lleva a la independencia y que en un principio se caracteriza por sus fuerzas socio-revolucionarias, es eliminado por las clases altas de la sociedad, conservadoras y de origen español.
+</string>
+		<key>Foto</key>
+		<string>http://i.ytimg.com/vi/uq2VVhVtC_A/maxresdefault.jpg</string>
+		<key>Año</key>
+		<integer>1821</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Sede de Texas</string>
+		<key>Descripcion</key>
+		<string>Tras la guerra con los Estados Unidos, México le sede la mitad de su territorio nacional (Texas, New Mexico, Arizona, California, Utah, Nevada y parte de Colorado).</string>
+		<key>Foto</key>
+		<string>http://www.txtraders.com/images/Texas%201849%20German%20Map.jpg</string>
+		<key>Año</key>
+		<integer>1849</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Presidencia de Beniro juarez</string>
+		<key>Descripcion</key>
+		<string>Benito Juárez, primer magistrado y procedente de una familia indígena, es presidente. Su mandato, caracterizado por reformas liberales, es interrumpido debido a la intervención armada de Francia. El archiduque Maximiliano de Austria, investido por Napoleón III como emperador de México, es vencido por Juárez (apoyado por los Estados Unidos) y fusilado en 1867. La iglesia pierde su influencia política.
+</string>
+		<key>Foto</key>
+		<string>http://somosnoticia.mx/wp-content/uploads/2014/11/Benito-Ju%C3%A1rez-.jpg</string>
+		<key>Año</key>
+		<integer>1861</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Dictadura de Porfirio Diaz</string>
+		<key>Descripcion</key>
+		<string>Bajo la dictadura del presidente Porfirio Díaz se inicia la industrialización del país con ayuda de inversiones extranjeras. México empieza a depender económicamente de los Estados Unidos.</string>
+		<key>Foto</key>
+		<string>http://noticias.universia.net.mx/mx/images/investigacion/l/la/lah/lahistoria-no-es-para-aprender-y-repetir.jpg</string>
+		<key>Año</key>
+		<integer>1877</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Revolución </string>
+		<key>Descripcion</key>
+		<string>Se desata una guerra civil. La revolución, apoyada por los campesinos (Emiliano Zapata y Pancho Villa), los trabajadores y las fuerzas burguesas progresivas, obtiene la victoria y a finales de los años 20 conduce a la así llamada &quot;revolución institucional&quot; (la cual le dio su nombre al partido oficialista mexicano).</string>
+		<key>Foto</key>
+		<string>http://vivemaravatio.com/wordpress/wp-content/uploads/2014/11/20nov.jpg</string>
+		<key>Año</key>
+		<integer>1910</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Firma de constitución mexicana</string>
+		<key>Descripcion</key>
+		<string>Se adopta la constitución, vigente hasta el día de hoy.</string>
+		<key>Foto</key>
+		<string>http://mexico.cnn.com/media/2014/02/04/constitucin.jpg</string>
+		<key>Año</key>
+		<integer>1917</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Fundación del PRI</string>
+		<key>Descripcion</key>
+		<string>Se funda el partido oficialista revolucionario, que desde 1946 pasa a llamarse PRI (Partido Revolucionario Institucional).</string>
+		<key>Foto</key>
+		<string>http://voxpopulislp.com/wp-content/uploads/2015/02/PRI.jpg</string>
+		<key>Año</key>
+		<integer>1929</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Nacionalización de compañías petroleras extranjeras</string>
+		<key>Descripcion</key>
+		<string>El gobierno del presidente Lázaro Cárdenas nacionaliza las compañías petroleras extranjeras.</string>
+		<key>Foto</key>
+		<string>http://talcualdigital.com/sgc/multimedia/Imagen/2011/12/30023petroleo.jpg</string>
+		<key>Año</key>
+		<integer>1938</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>México se una a la segunda guerra mundial</string>
+		<key>Descripcion</key>
+		<string>México entra en guerra al lado de los aliados, después de que submarinos alemanes hunden en el golfo de México dos barcos cisterna. México aumenta su exportación de materias primas a los Estados Unidos y ellos multiplican sus inversiones.</string>
+		<key>Foto</key>
+		<string>http://images.yuku.com.s3.amazonaws.com/image/jpeg/b6935d958ab7916caf20024b1634928c5af9e94.jpg</string>
+		<key>Año</key>
+		<integer>1942</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Masacre de Tlatelolco</string>
+		<key>Descripcion</key>
+		<string>Unos estudiantes aprovechan los juegos olímpicos para manifestar y son reprimidos de manera sangrienta.</string>
+		<key>Foto</key>
+		<string>http://upload.wikimedia.org/wikipedia/commons/e/ec/Ex%C3%A8rcit_al_Z%C3%B3calo-28_d%27agost.jpg</string>
+		<key>Año</key>
+		<integer>1968</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Terremoto en la ciudad de Mexico</string>
+		<key>Descripcion</key>
+		<string>El 19 de septiembre un terremoto destruye grandes partes del centro de la Ciudad de México.</string>
+		<key>Foto</key>
+		<string>http://calvillopublicidad.com.mx/news/wp-content/uploads/2014/09/terremoto1985.jpg</string>
+		<key>Año</key>
+		<integer>1985</integer>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Tratado de libre comercio</string>
+		<key>Descripcion</key>
+		<string>A partir de enero entra en vigor el Tratado del Libre Comercio (TLC) con los Estados Unidos y Canadá. Al mismo tiempo se desata un levantamiento en el estado de Chiapas, al sur de México, orquestado por el EZLN.</string>
+		<key>Foto</key>
+		<string>http://diegoberistain.com/wp-content/uploads/2014/10/tlc-entre-salvador-y-colombia.jpg</string>
+		<key>Año</key>
+		<real>1994</real>
+	</dict>
+	<dict>
+		<key>Titulo</key>
+		<string>Presidencia Vicente Fox</string>
+		<key>Descripcion</key>
+		<string>El 2 de julio, después de más de 70 años de mantenerse al poder, el PRI es sustituido. El candidato del PAN, Vicente Fox, gana los comicios.
+</string>
+		<key>Foto</key>
+		<string>http://fox.presidencia.gob.mx/images/principal/22345.jpg</string>
+		<key>Año</key>
+		<integer>2000</integer>
+	</dict>
+</array>
+</plist>
