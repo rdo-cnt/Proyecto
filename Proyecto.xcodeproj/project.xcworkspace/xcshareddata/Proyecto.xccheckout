@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ADCA3109-009C-4DD6-88D3-8507AFE532CD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Proyecto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3E238DEFD992C3CDF8FDE8D9285DF5045059870</key>
+		<string>https://github.com/watulion/Proyecto.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Proyecto.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3E238DEFD992C3CDF8FDE8D9285DF5045059870</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/watulion/Proyecto.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3E238DEFD992C3CDF8FDE8D9285DF5045059870</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3E238DEFD992C3CDF8FDE8D9285DF5045059870</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Proyecto</string>
+		</dict>
+	</array>
+</dict>
+</plist>
