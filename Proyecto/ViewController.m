@@ -100,10 +100,15 @@
                 [viewJuego setDetailItem3:object];
                 object = self.lista[4];
                 [viewJuego setDetailItem4:object];
-                object = self.lista[5];
-                [viewJuego setDetailItem5:object];
-                object = self.lista[6];
-                [viewJuego setDetailItem6:object];
+                
+                
+                if  (self.dificultad > 1){
+                    object = self.lista[5];
+                    [viewJuego setDetailItem5:object];
+                    object = self.lista[6];
+                    [viewJuego setDetailItem6:object];
+                }
+                viewJuego.detailNum = _dificultad;
                 
             }
         }
