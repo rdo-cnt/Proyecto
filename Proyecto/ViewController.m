@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "ViewControllerDificultad.h"
 #import "ViewControllerTema.h"
-#import "ViewControllerJuego.h"
 
 @interface ViewController ()
 
@@ -31,7 +30,7 @@
     
     NSString *pathPlist = [[NSBundle mainBundle]pathForResource:@"Property List" ofType:@"plist"];
     
-    //self.lista = [[NSArray alloc] initWithObjects:@"Asuntos Internacionales",@"Política mexicana",@"Presidencias", nil];
+    self.lista = [[NSArray alloc] initWithObjects:@"Asuntos Internacionales",@"Política mexicana",@"Presidencias", nil];
     
     self.lista = [[NSArray alloc]initWithContentsOfFile:pathPlist];
 }
@@ -88,29 +87,10 @@
         }
         else
         {
-            if ([[segue identifier] isEqualToString: @"ShowJuego"])
-            {
-                ViewControllerJuego *viewJuego = [segue destinationViewController];
-
-                NSDate *object = self.lista[1];
-                [viewJuego setDetailItem1:object];
-                object = self.lista[2];
-                [viewJuego setDetailItem2:object];
-                object = self.lista[3];
-                [viewJuego setDetailItem3:object];
-                object = self.lista[4];
-                [viewJuego setDetailItem4:object];
-                
-                
-                if  (self.dificultad > 1){
-                    object = self.lista[5];
-                    [viewJuego setDetailItem5:object];
-                    object = self.lista[6];
-                    [viewJuego setDetailItem6:object];
-                }
-                viewJuego.detailNum = _dificultad;
-                
-            }
+           /* NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+            NSDate *object = self.lista[indexPath.row];
+            [[segue destinationViewController] setDetailItem:object];
+        */
         }
         
     }
