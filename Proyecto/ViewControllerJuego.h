@@ -84,6 +84,7 @@
 
 
 
+
 @property (weak, nonatomic) IBOutlet UIButton *btnr1;
 @property (weak, nonatomic) IBOutlet UIButton *btnr2;
 @property (weak, nonatomic) IBOutlet UIButton *btnr3;

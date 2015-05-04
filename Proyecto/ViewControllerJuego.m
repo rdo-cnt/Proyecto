@@ -14,7 +14,9 @@
 
 @implementation ViewControllerJuego
 
+NSMutableArray *anArray;
 
+NSMutableArray *orden;
 
 NSArray *sorted;
 
@@ -95,7 +97,9 @@ NSArray *sorted;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableArray *anArray = [[NSMutableArray alloc] init];
+    orden = [[NSMutableArray alloc] init];
+    
+    anArray = [[NSMutableArray alloc] init];
     
     [anArray addObject:[self.detailItem1 objectForKey:@"Año"]];
     [anArray addObject:[self.detailItem2 objectForKey:@"Año"]];
@@ -105,6 +109,16 @@ NSArray *sorted;
     {
         [anArray addObject:[self.detailItem5 objectForKey:@"Año"]];
         [anArray addObject:[self.detailItem6 objectForKey:@"Año"]];
+    }
+    
+    [orden addObject:[self.detailItem1 objectForKey:@"Año"]];
+    [orden addObject:[self.detailItem2 objectForKey:@"Año"]];
+    [orden addObject:[self.detailItem3 objectForKey:@"Año"]];
+    [orden addObject:[self.detailItem4 objectForKey:@"Año"]];
+    if (self.detailNum > 1)
+    {
+        [orden addObject:[self.detailItem5 objectForKey:@"Año"]];
+        [orden addObject:[self.detailItem6 objectForKey:@"Año"]];
     }
  
     self.puntuacion=0;
@@ -327,6 +341,9 @@ NSArray *sorted;
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
                 self.primeroChosen = 1;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:0];
+                
                 break;
                 
             case 2:
@@ -336,6 +353,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen2.frame = frame;
                 self.primeroChosen = 2;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:0];
                 _btn2.enabled = NO;break;
             case 3:
                 self.btn3.backgroundColor = [UIColor clearColor];
@@ -343,6 +362,8 @@ NSArray *sorted;
                 frame.origin.x = 23; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen3.frame = frame;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:0];
                 self.primeroChosen = 3;
                 _btn3.enabled = NO;break;
             case 4:
@@ -351,6 +372,8 @@ NSArray *sorted;
                 frame.origin.x = 23; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen4.frame = frame;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:0];
                 self.primeroChosen = 4;
                 _btn4.enabled = NO;break;
             case 5:
@@ -359,6 +382,8 @@ NSArray *sorted;
                 frame.origin.x = 23; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen5.frame = frame;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:0];
                 self.primeroChosen = 5;
                 _btn5.enabled = NO;break;
             case 6:
@@ -367,6 +392,8 @@ NSArray *sorted;
                 frame.origin.x = 23; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen6.frame = frame;
+                [orden removeObjectAtIndex:0];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:0];
                 self.primeroChosen = 6;
                 _btn6.enabled = NO;break;
                 
@@ -442,6 +469,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:1];
                 self.segundoChosen = 1;
                 break;
                 
@@ -451,6 +480,8 @@ NSArray *sorted;
                 frame.origin.x = 115; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen2.frame = frame;
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:1];
                 self.segundoChosen = 2;
                 _btn2.enabled = NO;break;
             case 3:
@@ -460,6 +491,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen3.frame = frame;
                 self.segundoChosen = 3;
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:1];
                 _btn3.enabled = NO;break;
             case 4:
                 self.btn4.backgroundColor = [UIColor clearColor];
@@ -467,6 +500,8 @@ NSArray *sorted;
                 frame.origin.x = 115; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen4.frame = frame;
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:1];
                 self.segundoChosen = 4;
                 _btn4.enabled = NO;break;
             case 5:
@@ -474,6 +509,8 @@ NSArray *sorted;
                 frame = _imagen3.frame;
                 frame.origin.x = 115; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:1];
                 _imagen5.frame = frame;
                 self.segundoChosen = 5;
                 _btn5.enabled = NO;break;
@@ -483,6 +520,8 @@ NSArray *sorted;
                 frame.origin.x = 115; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen6.frame = frame;
+                [orden removeObjectAtIndex:1];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:1];
                 self.segundoChosen = 6;
                 _btn6.enabled = NO;break;
                 
@@ -531,6 +570,7 @@ NSArray *sorted;
                 frame.origin.x = self.detailItem6x; // new x coordinate
                 frame.origin.y = self.detailItem6y; // new y coordinate
                 _imagen6.frame = frame;
+                
                 _btn6.enabled = YES;break;
                 
             default:
@@ -556,6 +596,8 @@ NSArray *sorted;
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
                 self.terceroChosen = 1;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:2];
                 break;
                 
             case 2:
@@ -565,6 +607,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen2.frame = frame;
                 self.terceroChosen = 2;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:2];
                 _btn2.enabled = NO;break;
             case 3:
                 self.btn3.backgroundColor = [UIColor clearColor];
@@ -573,6 +617,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen3.frame = frame;
                 self.terceroChosen = 3;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:2];
                 _btn3.enabled = NO;break;
             case 4:
                 self.btn4.backgroundColor = [UIColor clearColor];
@@ -580,6 +626,8 @@ NSArray *sorted;
                 frame.origin.x = 204; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen4.frame = frame;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:2];
                 self.terceroChosen = 4;
                 _btn4.enabled = NO;break;
             case 5:
@@ -588,6 +636,8 @@ NSArray *sorted;
                 frame.origin.x = 204; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen5.frame = frame;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:2];
                 self.terceroChosen = 5;
                 _btn5.enabled = NO;break;
             case 6:
@@ -597,6 +647,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen6.frame = frame;
                 self.terceroChosen = 6;
+                [orden removeObjectAtIndex:2];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:2];
                 _btn6.enabled = NO;break;
                 
             default:
@@ -667,6 +719,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:3];
                 self.cuartoChosen = 1;
                 break;
                 
@@ -677,6 +731,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen2.frame = frame;
                 self.cuartoChosen = 2;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:3];
                 _btn2.enabled = NO;break;
             case 3:
                 self.btn3.backgroundColor = [UIColor clearColor];
@@ -684,6 +740,8 @@ NSArray *sorted;
                 frame.origin.x = 296; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen3.frame = frame;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:3];
                 self.cuartoChosen = 3;
                 _btn3.enabled = NO;break;
             case 4:
@@ -692,6 +750,8 @@ NSArray *sorted;
                 frame.origin.x = 296; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen4.frame = frame;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:3];
                 self.cuartoChosen = 4;
                 _btn4.enabled = NO;break;
             case 5:
@@ -700,6 +760,8 @@ NSArray *sorted;
                 frame.origin.x = 296; // new x coordinate
                 frame.origin.y = 349; // new y coordinate
                 _imagen5.frame = frame;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:3];
                 self.cuartoChosen = 5;
                 _btn5.enabled = NO;break;
             case 6:
@@ -709,6 +771,8 @@ NSArray *sorted;
                 frame.origin.y = 349; // new y coordinate
                 _imagen6.frame = frame;
                 self.cuartoChosen = 6;
+                [orden removeObjectAtIndex:3];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:3];
                 _btn6.enabled = NO;break;
                 
             default:
@@ -782,6 +846,8 @@ NSArray *sorted;
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
                 self.quintoChosen = 1;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:4];
                 break;
                 
             case 2:
@@ -791,6 +857,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen2.frame = frame;
                 self.quintoChosen = 2;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:4];
                 _btn2.enabled = NO;break;
             case 3:
                 self.btn3.backgroundColor = [UIColor clearColor];
@@ -799,6 +867,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen3.frame = frame;
                 self.quintoChosen = 3;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:4];
                 _btn3.enabled = NO;break;
             case 4:
                 self.btn4.backgroundColor = [UIColor clearColor];
@@ -807,6 +877,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen4.frame = frame;
                 self.quintoChosen = 4;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:4];
                 _btn4.enabled = NO;break;
             case 5:
                 self.btn5.backgroundColor = [UIColor clearColor];
@@ -815,6 +887,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen5.frame = frame;
                 self.quintoChosen = 5;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:4];
                 _btn5.enabled = NO;break;
             case 6:
                 self.btn6.backgroundColor = [UIColor clearColor];
@@ -822,6 +896,8 @@ NSArray *sorted;
                 frame.origin.x = 26; // new x coordinate
                 frame.origin.y = 470; // new y coordinate
                 _imagen6.frame = frame;
+                [orden removeObjectAtIndex:4];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:4];
                 self.quintoChosen = 6;
                 _btn6.enabled = NO;break;
                 
@@ -895,6 +971,8 @@ NSArray *sorted;
                 _imagen1.frame = frame;
                 _btn1.enabled = NO;
                 self.sextoChosen = 1;
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem1 objectForKey:@"Año"] atIndex:5];
                 break;
                 
             case 2:
@@ -904,6 +982,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen2.frame = frame;
                 self.sextoChosen = 2;
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem2 objectForKey:@"Año"] atIndex:5];
                 _btn2.enabled = NO;break;
             case 3:
                 self.btn3.backgroundColor = [UIColor clearColor];
@@ -912,6 +992,8 @@ NSArray *sorted;
                 frame.origin.y = 470; // new y coordinate
                 _imagen3.frame = frame;
                 self.sextoChosen = 3;
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem3 objectForKey:@"Año"] atIndex:5];
                 _btn3.enabled = NO;break;
             case 4:
                 self.btn4.backgroundColor = [UIColor clearColor];
@@ -919,6 +1001,8 @@ NSArray *sorted;
                 frame.origin.x = 293; // new x coordinate
                 frame.origin.y = 470; // new y coordinate
                 _imagen4.frame = frame;
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem4 objectForKey:@"Año"] atIndex:5];
                 self.sextoChosen = 4;
                 _btn4.enabled = NO;break;
             case 5:
@@ -927,6 +1011,8 @@ NSArray *sorted;
                 frame.origin.x = 293; // new x coordinate
                 frame.origin.y = 470; // new y coordinate
                 _imagen5.frame = frame;
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem5 objectForKey:@"Año"] atIndex:5];
                 self.sextoChosen = 5;
                 _btn5.enabled = NO;break;
             case 6:
@@ -934,6 +1020,8 @@ NSArray *sorted;
                 frame = _imagen3.frame;
                 frame.origin.x = 293; // new x coordinate
                 frame.origin.y = 470; // new y coordinate
+                [orden removeObjectAtIndex:5];
+                [orden insertObject:[self.detailItem6 objectForKey:@"Año"] atIndex:5];
                 _imagen6.frame = frame;
                 self.sextoChosen = 6;
                 _btn6.enabled = NO;break;
@@ -998,9 +1086,38 @@ NSArray *sorted;
 }
 
 - (IBAction)Check:(id)sender {
-    if (self.detailNum== 0) {
+    bool checker = YES;
+    int i = 0;
+    int limit = 4;
+    bool ready = NO;
+    if (self.detailNum > 1)
+    {
+        if (self.primeroUse && self.segundoUse && self.terceroUse && self.cuartoUse && self.quintoUse && self.sextoUse) {
+            ready = YES;
+        }
         
     }
+    else{
+        if (self.primeroUse && self.segundoUse && self.terceroUse && self.cuartoUse) {
+            ready = YES;
+        }
+    }
+    
+    if (self.detailNum > 1)  limit = 6;
+    
+    if (ready)
+    while (checker && i < limit) {
+        if ([orden objectAtIndex:i] != [sorted objectAtIndex:i]) {
+            checker = NO;
+        }
+        i++;
+    }
+    
+    if (checker) {
+        NSLog (@"The 4th integer is");
+    }
+    else
+         NSLog (@"Tsada");
     
 }
 @end
