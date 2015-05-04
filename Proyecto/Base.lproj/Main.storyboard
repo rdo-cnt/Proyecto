@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="60" width="375" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alinea la historia!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obJ-7x-J42">
-                                        <rect key="frame" x="97" y="0.0" width="183" height="34"/>
+                                        <rect key="frame" x="96" y="0.0" width="183" height="34"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -30,11 +31,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.70075616264971652" blue="0.50021212907830104" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline.png" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-y7-7Kc">
-                                <rect key="frame" x="38" y="156" width="299" height="129"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6m-GM-PPI">
-                                <rect key="frame" x="134" y="331" width="135" height="38"/>
+                                <rect key="frame" x="120" y="326" width="135" height="38"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                 <state key="normal" title="Jugar!">
@@ -42,12 +40,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OBk-YS-bRQ"/>
+                                    <action selector="Play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GLN-Sb-oI0"/>
                                     <segue destination="emT-0G-DYC" kind="show" identifier="ShowJuego" id="keW-RH-d1g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SA-ac-fjT">
-                                <rect key="frame" x="124" y="470" width="154" height="38"/>
+                                <rect key="frame" x="111" y="471" width="154" height="38"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                 <state key="normal" title="Como jugar">
@@ -60,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUW-Xh-0gG">
-                                <rect key="frame" x="136" y="516" width="130" height="38"/>
+                                <rect key="frame" x="123" y="517" width="130" height="38"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                 <state key="normal" title="Dificultad">
@@ -73,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYw-sq-hH5">
-                                <rect key="frame" x="148" y="562" width="106" height="38"/>
+                                <rect key="frame" x="135" y="563" width="106" height="38"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                 <state key="normal" title="Tema">
@@ -86,7 +84,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-4x-v70">
-                                <rect key="frame" x="103" y="424" width="195" height="38"/>
+                                <rect key="frame" x="90" y="425" width="195" height="38"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                 <state key="normal" title="Puntuaciones altas">
@@ -101,15 +99,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dificultad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkz-5W-M2B">
                                 <rect key="frame" x="56" y="626" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tema" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-6z-txL">
                                 <rect key="frame" x="277" y="626" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline.png" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-y7-7Kc">
+                                <rect key="frame" x="38" y="154" width="299" height="129"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.83230361871138581" green="0.93181818181818188" blue="0.93181818181818188" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -168,6 +169,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="papiro.png" translatesAutoresizingMaskIntoConstraints="NO" id="X0g-cO-MaG">
                                         <rect key="frame" x="48" y="145" width="319" height="365"/>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qsd-e0-l1c">
+                                        <rect key="frame" x="116" y="195" width="192" height="269"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Bienvenido a Alinea la historia!                                      En este juego encontrarás la forma más interactiva y fácil de aprender y reforzar tus conocimientos sobre la historia mexicana. Dependiendo de la dificultad que elijas, te encontrarás con 4 o 6 imagenes representando un suceso importante de la historia mexicana. Tu objetivo es  identificar cual ocurrió antes y despues de los demás para asi acomodarlos en el orden correcto. Simplemente da click en cada imagen para obtener una descripción de ésta y posteriormente, en la parte de abajo, da click en el recuadro que creas que corresponde a su orden. Recuerda que siempre puedes borrar una selección dando click en los recuadros de abajo. Y listo! Ya estas listo para aprender historia!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83230361870000003" green="0.93181818179999998" blue="0.93181818179999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -178,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fh7-Pm-PNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="1279"/>
+            <point key="canvasLocation" x="482.5" y="1278.5"/>
         </scene>
         <!--View Controller Dificultad-->
         <scene sceneID="sZg-nz-0FQ">
@@ -249,17 +257,17 @@
                                     <action selector="normal:" destination="hZS-SQ-IjO" eventType="touchUpInside" id="2yf-rR-vAP"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mue-PJ-NC6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Esta opcion indica al usuario si esta correcto o no. Hay 4 tarjetas y cuatro espacios que llenar." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mue-PJ-NC6">
                                 <rect key="frame" x="28" y="208" width="319" height="56"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PfJ-Oo-5n1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="El usuario no se le indicara si esta bien o mal. Hay 4 tarjetas y cuatro espacios." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PfJ-Oo-5n1">
                                 <rect key="frame" x="28" y="318" width="319" height="56"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HNS-bk-WPY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="El usuario no se le indicara si esta bien o mal. Hay 6 tarjetas y seis espacios." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HNS-bk-WPY">
                                 <rect key="frame" x="28" y="428" width="319" height="56"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -280,7 +288,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dificultad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-6Y-5fC">
                                 <rect key="frame" x="28" y="483" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -300,10 +308,10 @@
             </objects>
             <point key="canvasLocation" x="1051" y="1219"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Scores-->
         <scene sceneID="SF8-YL-XB1">
             <objects>
-                <viewController id="IoV-uh-lIG" sceneMemberID="viewController">
+                <viewController id="IoV-uh-lIG" customClass="ViewControllerScores" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qy5-cD-ofC"/>
                         <viewControllerLayoutGuide type="bottom" id="Vud-uq-WSA"/>
@@ -312,13 +320,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIG-sS-Iwf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIG-sS-Iwf">
                                 <rect key="frame" x="-20" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07B-ya-VQM">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07B-ya-VQM">
                                         <rect key="frame" x="0.0" y="60" width="414" height="34"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntuaciones Altas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La1-yI-ScC">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuaciones Altas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La1-yI-ScC">
                                                 <rect key="frame" x="109" y="0.0" width="196" height="34"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,10 +336,18 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.70075616259999995" blue="0.50021212910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="La1-yI-ScC" firstAttribute="top" secondItem="07B-ya-VQM" secondAttribute="top" id="65x-7b-ptj"/>
+                                            <constraint firstItem="La1-yI-ScC" firstAttribute="centerX" secondItem="07B-ya-VQM" secondAttribute="centerX" id="G8z-ur-V5h"/>
+                                            <constraint firstAttribute="bottom" secondItem="La1-yI-ScC" secondAttribute="bottom" id="QcJ-LQ-SWu"/>
+                                        </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utT-Ra-tqF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utT-Ra-tqF">
                                         <rect key="frame" x="120" y="554" width="174" height="38"/>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="K0N-HJ-cRk"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <state key="normal" title="Regresar">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,74 +358,97 @@
                                             <segue destination="vXZ-lx-hvc" kind="show" id="TzP-vB-IBc"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" alpha="0.14999999999999969" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leaderboards.png" translatesAutoresizingMaskIntoConstraints="NO" id="aye-WE-K8s">
+                                    <imageView userInteractionEnabled="NO" alpha="0.14999999999999969" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderboards.png" translatesAutoresizingMaskIntoConstraints="NO" id="aye-WE-K8s">
                                         <rect key="frame" x="38" y="163" width="338" height="340"/>
                                         <color key="tintColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="340" id="ZHt-wt-cht"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daniel Rodriguez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEf-bR-oy5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel Rodriguez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEf-bR-oy5">
                                         <rect key="frame" x="121" y="196" width="172" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="172" id="L3Q-Z3-a5v"/>
+                                            <constraint firstAttribute="height" constant="21" id="VtI-4x-xR5"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <color key="textColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="128,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-al-nAh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-al-nAh">
                                         <rect key="frame" x="176" y="225" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rodolfo Cantu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj8-he-PP9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodolfo Cantu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj8-he-PP9">
                                         <rect key="frame" x="136" y="254" width="142" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="SHu-B5-q3d"/>
+                                            <constraint firstAttribute="width" constant="142" id="Wxj-WF-tqU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <color key="textColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="123,234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-XJ-4X5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123,234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-XJ-4X5">
                                         <rect key="frame" x="176" y="283" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Alejandro Magno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5V-7i-lyL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alejandro Magno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5V-7i-lyL">
                                         <rect key="frame" x="128" y="312" width="159" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="dLw-ut-leA"/>
+                                            <constraint firstAttribute="width" constant="159" id="kyq-ZE-K63"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <color key="textColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="123,123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRs-j9-pAF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123,123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRs-j9-pAF">
                                         <rect key="frame" x="176" y="341" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="80,234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncz-iV-1Z0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80,234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncz-iV-1Z0">
                                         <rect key="frame" x="181" y="399" width="53" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Juanito Perez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-hU-r4v">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juanito Perez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-hU-r4v">
                                         <rect key="frame" x="155" y="428" width="105" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="ZHb-9k-tf3"/>
+                                            <constraint firstAttribute="height" constant="21" id="jeQ-N1-iij"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <color key="textColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20,123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-XK-agf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-XK-agf">
                                         <rect key="frame" x="181" y="457" width="53" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Maribel Ortiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-4J-RJK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maribel Ortiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-4J-RJK">
                                         <rect key="frame" x="135" y="370" width="144" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="144" id="UuP-do-zwg"/>
+                                            <constraint firstAttribute="height" constant="21" id="ock-B5-PbZ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <color key="textColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -419,20 +458,60 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83230361870000003" green="0.93181818179999998" blue="0.93181818179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="gRB-XJ-4X5" secondAttribute="centerX" id="AzX-Ky-wbb"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="AmD-4J-RJK" secondAttribute="centerX" id="C6K-XH-p0X"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="ncz-iV-1Z0" secondAttribute="centerX" id="Rsx-MJ-iDI"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="LRs-j9-pAF" secondAttribute="centerX" id="b1n-CU-1S1"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="Lwf-hU-r4v" secondAttribute="centerX" id="jHQ-ZO-3hh"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="gq6-al-nAh" secondAttribute="centerX" id="p8i-Vm-Wf4"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="a5V-7i-lyL" secondAttribute="centerX" id="wDU-ka-sp0"/>
-                                    <constraint firstItem="f7u-XK-agf" firstAttribute="centerX" secondItem="jj8-he-PP9" secondAttribute="centerX" id="yn3-M8-Wmd"/>
+                                    <constraint firstItem="gq6-al-nAh" firstAttribute="centerX" secondItem="GEf-bR-oy5" secondAttribute="centerX" id="0R6-ut-eaz"/>
+                                    <constraint firstItem="aye-WE-K8s" firstAttribute="top" secondItem="XIG-sS-Iwf" secondAttribute="top" constant="163" id="7Dk-3M-e02"/>
+                                    <constraint firstItem="Lwf-hU-r4v" firstAttribute="top" secondItem="ncz-iV-1Z0" secondAttribute="bottom" constant="8" symbolic="YES" id="8u7-eb-dlL"/>
+                                    <constraint firstItem="aye-WE-K8s" firstAttribute="leading" secondItem="XIG-sS-Iwf" secondAttribute="leading" constant="38" id="Awe-JJ-NvL"/>
+                                    <constraint firstItem="gRB-XJ-4X5" firstAttribute="trailing" secondItem="gq6-al-nAh" secondAttribute="trailing" id="B6F-zB-Xxd"/>
+                                    <constraint firstItem="gRB-XJ-4X5" firstAttribute="top" secondItem="jj8-he-PP9" secondAttribute="bottom" constant="8" symbolic="YES" id="BO0-be-EBr"/>
+                                    <constraint firstItem="07B-ya-VQM" firstAttribute="leading" secondItem="XIG-sS-Iwf" secondAttribute="leading" id="C5W-Wz-xxY"/>
+                                    <constraint firstItem="LRs-j9-pAF" firstAttribute="centerX" secondItem="AmD-4J-RJK" secondAttribute="centerX" id="DzY-nC-L7o"/>
+                                    <constraint firstItem="ncz-iV-1Z0" firstAttribute="top" secondItem="AmD-4J-RJK" secondAttribute="bottom" constant="8" symbolic="YES" id="G6v-9N-IUE"/>
+                                    <constraint firstItem="07B-ya-VQM" firstAttribute="top" secondItem="XIG-sS-Iwf" secondAttribute="top" constant="60" id="Ipj-N0-mgh"/>
+                                    <constraint firstItem="gq6-al-nAh" firstAttribute="top" secondItem="GEf-bR-oy5" secondAttribute="bottom" constant="8" symbolic="YES" id="L9J-jo-cjB"/>
+                                    <constraint firstItem="gRB-XJ-4X5" firstAttribute="leading" secondItem="gq6-al-nAh" secondAttribute="leading" id="LQm-Jr-OUk"/>
+                                    <constraint firstItem="Lwf-hU-r4v" firstAttribute="centerX" secondItem="ncz-iV-1Z0" secondAttribute="centerX" id="MGu-Fh-Yf2"/>
+                                    <constraint firstItem="utT-Ra-tqF" firstAttribute="centerX" secondItem="f7u-XK-agf" secondAttribute="centerX" id="NR3-mx-qQa"/>
+                                    <constraint firstAttribute="trailing" secondItem="07B-ya-VQM" secondAttribute="trailing" id="SrS-Kg-dUr"/>
+                                    <constraint firstItem="AmD-4J-RJK" firstAttribute="centerX" secondItem="ncz-iV-1Z0" secondAttribute="centerX" id="T0U-4K-eAx"/>
+                                    <constraint firstItem="LRs-j9-pAF" firstAttribute="leading" secondItem="gRB-XJ-4X5" secondAttribute="leading" id="ULg-qd-ZnH"/>
+                                    <constraint firstItem="f7u-XK-agf" firstAttribute="top" secondItem="Lwf-hU-r4v" secondAttribute="bottom" constant="8" symbolic="YES" id="WGs-NF-7jm"/>
+                                    <constraint firstItem="f7u-XK-agf" firstAttribute="leading" secondItem="ncz-iV-1Z0" secondAttribute="leading" id="Ys0-EH-hPP"/>
+                                    <constraint firstItem="utT-Ra-tqF" firstAttribute="top" secondItem="aye-WE-K8s" secondAttribute="bottom" constant="51" id="b0a-wO-Yxb"/>
+                                    <constraint firstItem="gq6-al-nAh" firstAttribute="centerX" secondItem="jj8-he-PP9" secondAttribute="centerX" id="e54-Ee-aki"/>
+                                    <constraint firstItem="gRB-XJ-4X5" firstAttribute="centerX" secondItem="a5V-7i-lyL" secondAttribute="centerX" id="k2Q-91-ekS"/>
+                                    <constraint firstItem="GEf-bR-oy5" firstAttribute="centerX" secondItem="07B-ya-VQM" secondAttribute="centerX" id="lMH-P7-Q59"/>
+                                    <constraint firstItem="utT-Ra-tqF" firstAttribute="top" secondItem="f7u-XK-agf" secondAttribute="bottom" constant="76" id="lZq-uk-YOD"/>
+                                    <constraint firstItem="LRs-j9-pAF" firstAttribute="top" secondItem="a5V-7i-lyL" secondAttribute="bottom" constant="8" symbolic="YES" id="mVd-Af-TLb"/>
+                                    <constraint firstItem="jj8-he-PP9" firstAttribute="top" secondItem="gq6-al-nAh" secondAttribute="bottom" constant="8" symbolic="YES" id="mch-9x-dso"/>
+                                    <constraint firstItem="a5V-7i-lyL" firstAttribute="top" secondItem="gRB-XJ-4X5" secondAttribute="bottom" constant="8" symbolic="YES" id="nVe-pc-sGu"/>
+                                    <constraint firstItem="AmD-4J-RJK" firstAttribute="top" secondItem="LRs-j9-pAF" secondAttribute="bottom" constant="8" symbolic="YES" id="tV0-4f-EBJ"/>
+                                    <constraint firstItem="aye-WE-K8s" firstAttribute="centerX" secondItem="ncz-iV-1Z0" secondAttribute="centerX" id="vax-tK-fX3"/>
+                                    <constraint firstItem="aye-WE-K8s" firstAttribute="top" secondItem="07B-ya-VQM" secondAttribute="bottom" constant="69" id="yhu-qe-IvQ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XIG-sS-Iwf" firstAttribute="top" secondItem="gwv-zS-r6f" secondAttribute="top" id="3VT-Jp-qtI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XIG-sS-Iwf" secondAttribute="bottom" constant="-69" id="8yb-9V-fTL"/>
+                            <constraint firstItem="XIG-sS-Iwf" firstAttribute="leading" secondItem="gwv-zS-r6f" secondAttribute="leadingMargin" constant="-36" id="d2h-Cn-8NT"/>
+                            <constraint firstItem="XIG-sS-Iwf" firstAttribute="centerX" secondItem="gwv-zS-r6f" secondAttribute="centerX" id="jFl-9h-ON4"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Name1" destination="GEf-bR-oy5" id="QBH-PZ-yY3"/>
+                        <outlet property="Name2" destination="jj8-he-PP9" id="SDH-7v-VK0"/>
+                        <outlet property="Name3" destination="a5V-7i-lyL" id="cUB-ne-k4A"/>
+                        <outlet property="Name4" destination="AmD-4J-RJK" id="hHz-vt-qfe"/>
+                        <outlet property="Name5" destination="Lwf-hU-r4v" id="7xO-i9-S12"/>
+                        <outlet property="Score1" destination="gq6-al-nAh" id="ZNw-2A-itu"/>
+                        <outlet property="Score2" destination="gRB-XJ-4X5" id="tpr-bu-B4S"/>
+                        <outlet property="Score3" destination="LRs-j9-pAF" id="hSK-4A-l29"/>
+                        <outlet property="Score4" destination="ncz-iV-1Z0" id="K6x-zP-jDd"/>
+                        <outlet property="Score5" destination="f7u-XK-agf" id="HSI-Dk-Vl3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvt-1s-yjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -538,7 +617,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNL-Gk-1Xr">
                                 <rect key="frame" x="35" y="591" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -558,10 +637,10 @@
             </objects>
             <point key="canvasLocation" x="1577" y="1167"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Juego-->
         <scene sceneID="Vgo-G5-exs">
             <objects>
-                <viewController id="emT-0G-DYC" sceneMemberID="viewController">
+                <viewController id="emT-0G-DYC" customClass="ViewControllerJuego" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R3w-C6-9n6"/>
                         <viewControllerLayoutGuide type="bottom" id="IG7-Ez-Cng"/>
@@ -573,22 +652,8 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-XK-jeR">
                                 <rect key="frame" x="-20" y="-8" width="414" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiM-dj-JWs">
-                                        <rect key="frame" x="0.0" y="77" width="414" height="34"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ordena la historia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCs-KX-vkT">
-                                                <rect key="frame" x="109" y="0.0" width="196" height="34"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <size key="shadowOffset" width="0.0" height="1"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.70075616259999995" blue="0.50021212910000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-W9-Iql">
-                                        <rect key="frame" x="30" y="31" width="98" height="38"/>
+                                        <rect key="frame" x="30" y="26" width="98" height="44"/>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <state key="normal" title="Menu">
@@ -601,76 +666,284 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zl1-wW-CjJ">
-                                        <rect key="frame" x="12" y="119" width="391" height="517"/>
+                                        <rect key="frame" x="12" y="119" width="391" height="547"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-n5-IPS">
-                                                <rect key="frame" x="18" y="26" width="113" height="113"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-n5-IPS">
+                                                <rect key="frame" x="18" y="8" width="72" height="69"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="aAd-3b-ydT">
-                                                <rect key="frame" x="139" y="26" width="113" height="113"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="aAd-3b-ydT">
+                                                <rect key="frame" x="103" y="8" width="72" height="69"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="P6G-2r-mqr">
-                                                <rect key="frame" x="18" y="251" width="113" height="113"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="P6G-2r-mqr">
+                                                <rect key="frame" x="103" y="91" width="72" height="69"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-d5-n3Y">
-                                                <rect key="frame" x="139" y="251" width="113" height="113"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-d5-n3Y">
+                                                <rect key="frame" x="18" y="175" width="72" height="69"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-bc-2KB">
-                                                <rect key="frame" x="260" y="251" width="113" height="113"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-bc-2KB">
+                                                <rect key="frame" x="103" y="175" width="72" height="69"/>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="5da-dL-Egg">
-                                                <rect key="frame" x="260" y="147" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="wng-v5-JvO">
+                                                <rect key="frame" x="18" y="91" width="72" height="69"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-PV-Fxc">
+                                                <rect key="frame" x="-31" y="269" width="414" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orden cronológico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ES-Xm-KLs">
+                                                        <rect key="frame" x="100" y="0.0" width="260" height="34"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.70075616259999995" blue="0.50021212910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bc9-Sj-Tfs">
+                                                <rect key="frame" x="11" y="340" width="95" height="87"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="yAb-AH-vtd">
+                                                <rect key="frame" x="103" y="340" width="95" height="87"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="vwM-bq-xfE">
+                                                <rect key="frame" x="284" y="340" width="95" height="87"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="yua-bU-sib">
+                                                <rect key="frame" x="193" y="340" width="95" height="87"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segundo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-UH-MxQ">
+                                                <rect key="frame" x="115" y="311" width="70" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tercero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkH-Fd-Una">
+                                                <rect key="frame" x="212" y="311" width="57" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuarto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-ta-ESa">
+                                                <rect key="frame" x="305" y="311" width="53" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-mV-cpS">
+                                                <rect key="frame" x="28" y="311" width="60" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dq-ng-YOa">
+                                                <rect key="frame" x="18" y="91" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b3:" destination="emT-0G-DYC" eventType="touchUpInside" id="vfd-QX-T9Z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZS-kR-Uj0">
+                                                <rect key="frame" x="103" y="175" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b6:" destination="emT-0G-DYC" eventType="touchUpInside" id="8T4-UM-e0f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-kP-RdH">
+                                                <rect key="frame" x="28" y="340" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="primero:" destination="emT-0G-DYC" eventType="touchUpInside" id="KCO-RL-6Ik"/>
+                                                </connections>
+                                            </button>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTD-JD-Mrm">
+                                                <rect key="frame" x="14" y="460" width="95" height="87"/>
+                                            </imageView>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quinto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1C-UD-ihS">
+                                                <rect key="frame" x="31" y="435" width="52" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x25-xF-eOC">
+                                                <rect key="frame" x="31" y="460" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="quinto:" destination="emT-0G-DYC" eventType="touchUpInside" id="Zws-jy-jQy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzn-rj-x3Z">
+                                                <rect key="frame" x="117" y="340" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="segundo:" destination="emT-0G-DYC" eventType="touchUpInside" id="vo6-xo-an4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEz-Lf-vjZ">
+                                                <rect key="frame" x="209" y="340" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tercero:" destination="emT-0G-DYC" eventType="touchUpInside" id="LI1-dI-amg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFY-wZ-BPH">
+                                                <rect key="frame" x="298" y="340" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cuarto:" destination="emT-0G-DYC" eventType="touchUpInside" id="Wri-on-fnK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2O-xt-7p7">
+                                                <rect key="frame" x="18" y="8" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b1:" destination="emT-0G-DYC" eventType="touchUpInside" id="cdj-KW-saV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-UV-7si">
+                                                <rect key="frame" x="103" y="91" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b4:" destination="emT-0G-DYC" eventType="touchUpInside" id="ZJk-ni-5zy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP4-EX-9VJ">
+                                                <rect key="frame" x="103" y="8" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b2:" destination="emT-0G-DYC" eventType="touchUpInside" id="6hf-SB-CI8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upn-7v-JWa">
+                                                <rect key="frame" x="146" y="490" width="98" height="38"/>
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal" title="Revisar">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Check:" destination="emT-0G-DYC" eventType="touchUpInside" id="ff5-YI-0W4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMd-n8-4Me">
+                                                <rect key="frame" x="17" y="177" width="74" height="69"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="b5:" destination="emT-0G-DYC" eventType="touchUpInside" id="HZZ-Fs-Lh0"/>
+                                                </connections>
+                                            </button>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square-clip-art-29529.png" translatesAutoresizingMaskIntoConstraints="NO" id="IdU-Ng-fjZ">
+                                                <rect key="frame" x="281" y="460" width="95" height="87"/>
+                                            </imageView>
+                                            <button opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgX-ZW-uue">
+                                                <rect key="frame" x="298" y="460" width="67" height="87"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sexto:" destination="emT-0G-DYC" eventType="touchUpInside" id="iaQ-9j-fZy"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON6-fc-l4w">
+                                                <rect key="frame" x="305" y="435" width="45" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySd-gX-0Jz">
+                                                <rect key="frame" x="185" y="168" width="191" height="76"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="q7j-Yt-iEU">
-                                                <rect key="frame" x="18" y="372" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="maX-CU-eN6">
-                                                <rect key="frame" x="139" y="372" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="qlW-of-jvx">
-                                                <rect key="frame" x="260" y="372" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="Q88-vE-Ekj">
-                                                <rect key="frame" x="139" y="147" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." translatesAutoresizingMaskIntoConstraints="NO" id="ySd-gX-0Jz">
-                                                <rect key="frame" x="18" y="147" width="113" height="89"/>
-                                                <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="history.gif" translatesAutoresizingMaskIntoConstraints="NO" id="wng-v5-JvO">
-                                                <rect key="frame" x="260" y="26" width="113" height="113"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFg-8e-8OH">
+                                                <rect key="frame" x="185" y="21" width="191" height="139"/>
                                             </imageView>
                                         </subviews>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upn-7v-JWa">
-                                        <rect key="frame" x="158" y="629" width="98" height="38"/>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.63921568630000003" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
-                                        <state key="normal" title="Probar">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="Play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MxI-JJ-smu"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiM-dj-JWs">
+                                        <rect key="frame" x="0.0" y="83" width="414" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ordena la historia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCs-KX-vkT">
+                                                <rect key="frame" x="109" y="0.0" width="196" height="34"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.70075616259999995" blue="0.50021212910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntuación:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC3-P9-a4o">
+                                        <rect key="frame" x="165" y="31" width="135" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2030" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-ix-ct3">
+                                        <rect key="frame" x="298" y="31" width="94" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emV-8v-pYZ">
+                                        <rect key="frame" x="397" y="54" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83230361870000003" green="0.93181818179999998" blue="0.93181818179999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -678,6 +951,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btn1" destination="U2O-xt-7p7" id="0gB-EZ-OdS"/>
+                        <outlet property="btn2" destination="MP4-EX-9VJ" id="f7c-dX-GU1"/>
+                        <outlet property="btn3" destination="7dq-ng-YOa" id="7wI-7m-mhb"/>
+                        <outlet property="btn4" destination="KUD-UV-7si" id="BJC-Xj-JhB"/>
+                        <outlet property="btn5" destination="sMd-n8-4Me" id="eVR-QS-rYI"/>
+                        <outlet property="btn6" destination="OZS-kR-Uj0" id="CDh-dy-jHJ"/>
+                        <outlet property="btnr1" destination="P7K-kP-RdH" id="M5g-h4-wpf"/>
+                        <outlet property="btnr2" destination="dzn-rj-x3Z" id="rzi-5r-Vr4"/>
+                        <outlet property="btnr3" destination="lEz-Lf-vjZ" id="hDc-W5-FW9"/>
+                        <outlet property="btnr4" destination="uFY-wZ-BPH" id="I9U-Hb-tNH"/>
+                        <outlet property="btnr5" destination="x25-xF-eOC" id="9OW-cm-naF"/>
+                        <outlet property="btnr6" destination="OgX-ZW-uue" id="88k-ru-Fzz"/>
+                        <outlet property="imagen1" destination="iYZ-n5-IPS" id="T2r-bA-QY0"/>
+                        <outlet property="imagen2" destination="aAd-3b-ydT" id="3Ra-cK-ZbH"/>
+                        <outlet property="imagen3" destination="wng-v5-JvO" id="N4b-cL-3Ng"/>
+                        <outlet property="imagen4" destination="P6G-2r-mqr" id="MJR-nh-1g6"/>
+                        <outlet property="imagen5" destination="0PA-d5-n3Y" id="3tI-YC-Ps5"/>
+                        <outlet property="imagen6" destination="dPi-bc-2KB" id="sTO-nG-pVn"/>
+                        <outlet property="imagenquinto" destination="GTD-JD-Mrm" id="Jxg-8O-5vm"/>
+                        <outlet property="imagensexto" destination="IdU-Ng-fjZ" id="zJO-Rs-Ehu"/>
+                        <outlet property="label1" destination="ySd-gX-0Jz" id="GmO-kI-EmE"/>
+                        <outlet property="labelCuartaExtra" destination="eOs-ta-ESa" id="tYh-IY-SNw"/>
+                        <outlet property="lblPuntuacion" destination="Q6K-ix-ct3" id="FSI-Zs-Wxg"/>
+                        <outlet property="lblQuinto" destination="H1C-UD-ihS" id="6Di-Bk-XsY"/>
+                        <outlet property="lblSexto" destination="ON6-fc-l4w" id="7bM-41-zbq"/>
+                        <outlet property="lblconversion" destination="emV-8v-pYZ" id="aFN-4P-vWG"/>
+                        <outlet property="muestraImagen" destination="WFg-8e-8OH" id="WaG-hY-yue"/>
+                        <outlet property="r4" destination="vwM-bq-xfE" id="ATo-GL-LRb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeO-OA-fsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,9 +991,10 @@
         <image name="history.gif" width="450" height="318"/>
         <image name="leaderboards.png" width="200" height="200"/>
         <image name="papiro.png" width="640" height="599"/>
+        <image name="square-clip-art-29529.png" width="510" height="510"/>
         <image name="timeline.png" width="789" height="209"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IXB-B4-NGR"/>
+        <segue reference="TzP-vB-IBc"/>
     </inferredMetricsTieBreakers>
 </document>

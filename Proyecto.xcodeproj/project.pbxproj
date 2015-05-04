@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635FDED81AF6718A00EF8950 /* HighScores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635FDED71AF6718A00EF8950 /* HighScores.plist */; };
+		635FDEDB1AF6BB5000EF8950 /* ViewControllerScores.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FDEDA1AF6BB5000EF8950 /* ViewControllerScores.m */; };
 		6392DD201AC7A3CF0092C603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392DD1F1AC7A3CF0092C603 /* main.m */; };
 		6392DD231AC7A3CF0092C603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392DD221AC7A3CF0092C603 /* AppDelegate.m */; };
 		6392DD261AC7A3CF0092C603 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392DD251AC7A3CF0092C603 /* ViewController.m */; };
@@ -21,6 +23,8 @@
 		FB7CBBDF1AE0154C00C566F3 /* ViewControllerDificultad.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7CBBDE1AE0154C00C566F3 /* ViewControllerDificultad.m */; };
 		FB7CBBE21AE0158A00C566F3 /* ViewControllerTema.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7CBBE11AE0158A00C566F3 /* ViewControllerTema.m */; };
 		FB7CBBE41AE0176600C566F3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB7CBBE31AE0176600C566F3 /* Property List.plist */; };
+		FBA014111AF28243000966C6 /* ViewControllerJuego.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA014101AF28243000966C6 /* ViewControllerJuego.m */; };
+		FBA014131AF29F9E000966C6 /* square-clip-art-29529.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA014121AF29F9E000966C6 /* square-clip-art-29529.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		635FDED71AF6718A00EF8950 /* HighScores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HighScores.plist; sourceTree = "<group>"; };
+		635FDED91AF6BB5000EF8950 /* ViewControllerScores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerScores.h; sourceTree = "<group>"; };
+		635FDEDA1AF6BB5000EF8950 /* ViewControllerScores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerScores.m; sourceTree = "<group>"; };
 		6392DD1A1AC7A3CF0092C603 /* Proyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6392DD1E1AC7A3CF0092C603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6392DD1F1AC7A3CF0092C603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +63,9 @@
 		FB7CBBE01AE0158A00C566F3 /* ViewControllerTema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTema.h; sourceTree = "<group>"; };
 		FB7CBBE11AE0158A00C566F3 /* ViewControllerTema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTema.m; sourceTree = "<group>"; };
 		FB7CBBE31AE0176600C566F3 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		FBA0140F1AF28243000966C6 /* ViewControllerJuego.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerJuego.h; sourceTree = "<group>"; };
+		FBA014101AF28243000966C6 /* ViewControllerJuego.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerJuego.m; sourceTree = "<group>"; };
+		FBA014121AF29F9E000966C6 /* square-clip-art-29529.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-clip-art-29529.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7CBBE31AE0176600C566F3 /* Property List.plist */,
+				635FDED71AF6718A00EF8950 /* HighScores.plist */,
 				6392DD1C1AC7A3CF0092C603 /* Proyecto */,
 				6392DD361AC7A3CF0092C603 /* ProyectoTests */,
 				6392DD1B1AC7A3CF0092C603 /* Products */,
@@ -101,12 +112,17 @@
 				6392DD4D1AC7C2FD0092C603 /* history.gif */,
 				6392DD431AC7A7CF0092C603 /* timeline.png */,
 				6392DD451AC7B24F0092C603 /* leaderboards.png */,
+				FBA014121AF29F9E000966C6 /* square-clip-art-29529.png */,
 				6392DD211AC7A3CF0092C603 /* AppDelegate.h */,
 				6392DD4B1AC7BA840092C603 /* papiro.png */,
 				6392DD221AC7A3CF0092C603 /* AppDelegate.m */,
 				6392DD241AC7A3CF0092C603 /* ViewController.h */,
 				6392DD251AC7A3CF0092C603 /* ViewController.m */,
 				6392DD271AC7A3CF0092C603 /* Main.storyboard */,
+				635FDED91AF6BB5000EF8950 /* ViewControllerScores.h */,
+				635FDEDA1AF6BB5000EF8950 /* ViewControllerScores.m */,
+				FBA0140F1AF28243000966C6 /* ViewControllerJuego.h */,
+				FBA014101AF28243000966C6 /* ViewControllerJuego.m */,
 				FB7CBBDD1AE0154C00C566F3 /* ViewControllerDificultad.h */,
 				FB7CBBDE1AE0154C00C566F3 /* ViewControllerDificultad.m */,
 				FB7CBBE01AE0158A00C566F3 /* ViewControllerTema.h */,
@@ -227,6 +243,8 @@
 				6392DD291AC7A3CF0092C603 /* Main.storyboard in Resources */,
 				6392DD2E1AC7A3CF0092C603 /* LaunchScreen.xib in Resources */,
 				6392DD4C1AC7BA840092C603 /* papiro.png in Resources */,
+				635FDED81AF6718A00EF8950 /* HighScores.plist in Resources */,
+				FBA014131AF29F9E000966C6 /* square-clip-art-29529.png in Resources */,
 				6392DD461AC7B24F0092C603 /* leaderboards.png in Resources */,
 				6392DD4E1AC7C2FD0092C603 /* history.gif in Resources */,
 				6392DD441AC7A7CF0092C603 /* timeline.png in Resources */,
@@ -252,8 +270,10 @@
 				6392DD261AC7A3CF0092C603 /* ViewController.m in Sources */,
 				FB7CBBDF1AE0154C00C566F3 /* ViewControllerDificultad.m in Sources */,
 				6392DD231AC7A3CF0092C603 /* AppDelegate.m in Sources */,
+				635FDEDB1AF6BB5000EF8950 /* ViewControllerScores.m in Sources */,
 				FB7CBBE21AE0158A00C566F3 /* ViewControllerTema.m in Sources */,
 				6392DD201AC7A3CF0092C603 /* main.m in Sources */,
+				FBA014111AF28243000966C6 /* ViewControllerJuego.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

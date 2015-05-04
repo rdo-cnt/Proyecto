@@ -16,11 +16,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDificultad;
 @property (weak, nonatomic) IBOutlet UILabel *lblTema;
 
-- (IBAction)Play:(id)sender;
+
 - (IBAction)HighScores:(id)sender;
 - (IBAction)HowToPlay:(id)sender;
 - (IBAction)Difficulty:(id)sender;
 - (IBAction)Topic:(id)sender;
+- (IBAction)Play:(id)sender;
 
 @end
 
