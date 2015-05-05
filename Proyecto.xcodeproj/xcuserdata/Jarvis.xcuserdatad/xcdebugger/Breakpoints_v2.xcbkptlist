@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Proyecto/ViewControllerJuego.m"
-            timestampString = "452394452.084961"
+            timestampString = "452485473.598213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "395"
+            endingLineNumber = "395"
             landmarkName = "-b1:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Proyecto/ViewControllerJuego.m"
-            timestampString = "452394452.084961"
+            timestampString = "452485473.598213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Proyecto/ViewControllerJuego.m"
+            timestampString = "452484402.013594"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-reshuffle"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Proyecto/ViewControllerJuego.m"
+            timestampString = "452485473.598213"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>

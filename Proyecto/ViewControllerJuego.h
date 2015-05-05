@@ -20,6 +20,12 @@
 @property NSInteger detailNum;
 @property NSInteger chosenOne;
 @property NSInteger puntuacion;
+@property NSInteger puntuaciontemp;
+@property NSInteger puntuacionbonus;
+@property NSInteger vidas;
+@property NSInteger tempvidas;
+@property NSInteger tempintentos;
+@property NSInteger intentos;
 @property (weak, nonatomic) IBOutlet UILabel *lblconversion;
 
 //cuales estan en los lugares?

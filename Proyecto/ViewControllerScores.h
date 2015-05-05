@@ -25,4 +25,6 @@
 @property (strong, nonatomic) id detailItem4;
 @property (strong, nonatomic) id detailItem5;
 
+
+
 @end

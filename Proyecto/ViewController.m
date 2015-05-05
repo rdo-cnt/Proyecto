@@ -111,27 +111,6 @@
             if ([[segue identifier] isEqualToString: @"ShowJuego"])
             {
                 ViewControllerJuego *viewJuego = [segue destinationViewController];
-                self.lista=[self shuffleArray:self.lista];
-                
-             
-               
-
-                NSObject *object = self.lista[1];
-                [viewJuego setDetailItem1:object];
-                object = self.lista[2];
-                [viewJuego setDetailItem2:object];
-                object = self.lista[3];
-                [viewJuego setDetailItem3:object];
-                object = self.lista[4];
-                [viewJuego setDetailItem4:object];
-                
-                
-                if  (self.dificultad > 1){
-                    object = self.lista[5];
-                    [viewJuego setDetailItem5:object];
-                    object = self.lista[6];
-                    [viewJuego setDetailItem6:object];
-                }
                 viewJuego.detailNum = _dificultad;
                 
             }

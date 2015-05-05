@@ -662,7 +662,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3xa-Fw-wOe"/>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="4pZ-8n-qay"/>
+                                            <segue destination="vXZ-lx-hvc" kind="show" identifier="goBack" id="4pZ-8n-qay"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zl1-wW-CjJ">
@@ -995,6 +995,6 @@
         <image name="timeline.png" width="789" height="209"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TzP-vB-IBc"/>
+        <segue reference="4pZ-8n-qay"/>
     </inferredMetricsTieBreakers>
 </document>

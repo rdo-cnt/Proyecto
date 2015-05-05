@@ -7,9 +7,13 @@
 //
 
 #import "ViewControllerJuego.h"
+#import "ViewControllerScores.h"
+#import "ViewController.h"
+
+
 
 @interface ViewControllerJuego ()
-
+@property (nonatomic,strong) NSArray *lista;
 @end
 
 @implementation ViewControllerJuego
@@ -19,6 +23,8 @@ NSMutableArray *anArray;
 NSMutableArray *orden;
 
 NSArray *sorted;
+
+
 
 - (void)setDetailItem:(id)newDetailItem {
     if (_detailItem1 != newDetailItem) {
@@ -91,11 +97,154 @@ NSArray *sorted;
     
 }
 
+- (NSArray*)shuffleArray:(NSArray*)array {
+    
+    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:array];
+    
+    for(NSUInteger i = [array count]; i > 1; i--) {
+        NSUInteger j = arc4random_uniform(i);
+        [temp exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
+    }
+    
+    return [NSArray arrayWithArray:temp];
+}
+
+- (void)wrong {
+    self.vidas--;
+     CGRect frame;
+    frame = _imagen1.frame;
+    frame.origin.x = self.detailItem1x; // new x coordinate
+    frame.origin.y = self.detailItem1y; // new y coordinate
+    _imagen1.frame = frame;
+    frame = _imagen2.frame;
+    frame.origin.x = self.detailItem2x; // new x coordinate
+    frame.origin.y = self.detailItem2y; // new y coordinate
+    _imagen2.frame = frame;
+    frame = _imagen3.frame;
+    frame.origin.x = self.detailItem3x; // new x coordinate
+    frame.origin.y = self.detailItem3y; // new y coordinate
+    _imagen3.frame = frame;
+    frame = _imagen4.frame;
+    frame.origin.x = self.detailItem4x; // new x coordinate
+    frame.origin.y = self.detailItem4y; // new y coordinate
+    _imagen4.frame = frame;
+    frame = _imagen5.frame;
+    frame.origin.x = self.detailItem5x; // new x coordinate
+    frame.origin.y = self.detailItem5y; // new y coordinate
+    _imagen5.frame = frame;
+    frame = _imagen6.frame;
+    frame.origin.x = self.detailItem6x; // new x coordinate
+    frame.origin.y = self.detailItem6y; // new y coordinate
+    _imagen6.frame = frame;
+    _btn1.enabled = YES;
+    _btn2.enabled = YES;
+    _btn3.enabled = YES;
+    _btn4.enabled = YES;
+    _btn5.enabled = YES;
+    _btn6.enabled = YES;
+   
+    self.primeroUse = NO;
+    self.segundoUse = NO;
+    self.terceroUse = NO;
+    self.cuartoUse = NO;
+    if (self.detailNum > 1) {
+        self.quintoUse = NO;
+        self.sextoUse = NO;
+    }
+    
+    
+
+    
+}
+
+-(void)lose{
+
+    [self performSegueWithIdentifier:@"goBack" sender:self];
+        
+}
+
+- (void)reshuffle {
+    
+    CGRect frame;
+    frame = _imagen1.frame;
+    frame.origin.x = self.detailItem1x; // new x coordinate
+    frame.origin.y = self.detailItem1y; // new y coordinate
+    _imagen1.frame = frame;
+    frame = _imagen2.frame;
+    frame.origin.x = self.detailItem2x; // new x coordinate
+    frame.origin.y = self.detailItem2y; // new y coordinate
+    _imagen2.frame = frame;
+    frame = _imagen3.frame;
+    frame.origin.x = self.detailItem3x; // new x coordinate
+    frame.origin.y = self.detailItem3y; // new y coordinate
+    _imagen3.frame = frame;
+    frame = _imagen4.frame;
+    frame.origin.x = self.detailItem4x; // new x coordinate
+    frame.origin.y = self.detailItem4y; // new y coordinate
+    _imagen4.frame = frame;
+    frame = _imagen5.frame;
+    frame.origin.x = self.detailItem5x; // new x coordinate
+    frame.origin.y = self.detailItem5y; // new y coordinate
+    _imagen5.frame = frame;
+    frame = _imagen6.frame;
+    frame.origin.x = self.detailItem6x; // new x coordinate
+    frame.origin.y = self.detailItem6y; // new y coordinate
+    _imagen6.frame = frame;
+    _btn1.enabled = YES;
+    _btn2.enabled = YES;
+    _btn3.enabled = YES;
+    _btn4.enabled = YES;
+    _btn5.enabled = YES;
+    _btn6.enabled = YES;
+    
+    self.puntuaciontemp = self.puntuacion;
+    self.tempvidas = self.vidas;
+    self.tempintentos = self.intentos;
+    [self viewDidLoad];
+    self.puntuacion = self.puntuaciontemp;
+    self.vidas = self.tempvidas;
+    self.puntuacion += 400 - (self.tempintentos*50);
+    self.lblPuntuacion.text = [NSString stringWithFormat: @"%ld", (long)self.puntuacion];
+    
+}
+
+
 
 
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
+    self.puntuacion = 0;
+    self.intentos = 0;
+    self.vidas = 5;
+    self.lblPuntuacion.text = [NSString stringWithFormat: @"%ld", (long)self.puntuacion];
+    NSString *pathPlist = [[NSBundle mainBundle]pathForResource:@"Property List" ofType:@"plist"];
+    
+    
+    //self.lista = [[NSArray alloc] initWithObjects:@"Asuntos Internacionales",@"Política mexicana",@"Presidencias", nil];
+    
+    self.lista = [[NSArray alloc]initWithContentsOfFile:pathPlist];
+    
+
+    self.lista=[self shuffleArray:self.lista];
+    
+    NSObject *object = self.lista[1];
+    [self setDetailItem1:object];
+    object = self.lista[2];
+    [self setDetailItem2:object];
+    object = self.lista[3];
+    [self setDetailItem3:object];
+    object = self.lista[4];
+    [self setDetailItem4:object];
+    
+    
+    if  (self.detailNum > 1){
+        object = self.lista[5];
+        [self setDetailItem5:object];
+        object = self.lista[6];
+        [self setDetailItem6:object];
+    }
     
     orden = [[NSMutableArray alloc] init];
     
@@ -133,7 +282,6 @@ NSArray *sorted;
     NSLog (@"The 4th integer is: %@", [sorted objectAtIndex:2]);
     NSLog (@"The 4th integer is: %@", [sorted objectAtIndex:3]);
 
-    
     
     self.primeroUse = NO;
     self.segundoUse = NO;
@@ -227,15 +375,21 @@ NSArray *sorted;
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString: @"goBack"])
+    {
+        ViewController *viewHome = [segue destinationViewController];
+        
+        
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (IBAction)b1:(id)sender {
     self.muestraImagen.image = self.imagen1.image;
@@ -1086,10 +1240,12 @@ NSArray *sorted;
 }
 
 - (IBAction)Check:(id)sender {
+    
     bool checker = YES;
     int i = 0;
     int limit = 4;
     bool ready = NO;
+    CGRect frame;
     if (self.detailNum > 1)
     {
         if (self.primeroUse && self.segundoUse && self.terceroUse && self.cuartoUse && self.quintoUse && self.sextoUse) {
@@ -1106,18 +1262,313 @@ NSArray *sorted;
     if (self.detailNum > 1)  limit = 6;
     
     if (ready)
+    {
     while (checker && i < limit) {
         if ([orden objectAtIndex:i] != [sorted objectAtIndex:i]) {
             checker = NO;
         }
         i++;
     }
+        
     
     if (checker) {
         NSLog (@"The 4th integer is");
+        [self reshuffle];
+        
     }
     else
+    {
          NSLog (@"Tsada");
-    
+        self.intentos++;
+        
+        //cuando se equivoca en facil
+        if (self.detailNum == 0) {
+            i =0;
+            self.vidas--;
+            while (i < limit) {
+                
+                if ([orden objectAtIndex:i] != [sorted objectAtIndex:i]) {
+                    switch (i) {
+                        case 0:
+                            self.primeroUse = NO;
+                            switch (self.primeroChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 1:
+                            self.segundoUse = NO;
+                            switch (self.segundoChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 2:
+                            self.terceroUse = NO;
+                            switch (self.terceroChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 3:
+                            self.cuartoUse = NO;
+                            switch (self.cuartoChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 4:
+                            self.quintoUse = NO;
+                            switch (self.quintoChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 5:
+                            self.sextoUse = NO;
+                            switch (self.sextoChosen) {
+                                case 1:
+                                    frame = _imagen1.frame;
+                                    frame.origin.x = self.detailItem1x; // new x coordinate
+                                    frame.origin.y = self.detailItem1y; // new y coordinate
+                                    _imagen1.frame = frame; _btn1.enabled = YES;
+                                    break;
+                                case 2:
+                                    frame = _imagen2.frame;
+                                    frame.origin.x = self.detailItem2x; // new x coordinate
+                                    frame.origin.y = self.detailItem2y; // new y coordinate
+                                    _imagen2.frame = frame;
+                                    _btn2.enabled = YES;break;
+                                case 3:
+                                    frame = _imagen3.frame;
+                                    frame.origin.x = self.detailItem3x; // new x coordinate
+                                    frame.origin.y = self.detailItem3y; // new y coordinate
+                                    _imagen3.frame = frame;
+                                    _btn3.enabled = YES;break;
+                                case 4:
+                                    frame = _imagen4.frame;
+                                    frame.origin.x = self.detailItem4x; // new x coordinate
+                                    frame.origin.y = self.detailItem4y; // new y coordinate
+                                    _imagen4.frame = frame;
+                                    _btn4.enabled = YES;break;
+                                case 5:
+                                    frame = _imagen5.frame;
+                                    frame.origin.x = self.detailItem5x; // new x coordinate
+                                    frame.origin.y = self.detailItem5y; // new y coordinate
+                                    _imagen5.frame = frame;
+                                    _btn5.enabled = YES;break;
+                                case 6:
+                                    frame = _imagen6.frame;
+                                    frame.origin.x = self.detailItem6x; // new x coordinate
+                                    frame.origin.y = self.detailItem6y; // new y coordinate
+                                    _imagen6.frame = frame;
+                                    _btn6.enabled = YES;break;
+                                    
+                                default:
+                                    break;
+                            }
+                            break;
+
+
+                            
+                        default:
+                            break;
+                    }
+                }
+                i++;
+            }
+        }
+        else
+     [self wrong];
+    }
+    }
+    if (self.vidas <= 0) {
+        [self lose];
+    }
 }
 @end
